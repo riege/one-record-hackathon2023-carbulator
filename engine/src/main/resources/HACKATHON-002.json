@@ -1,0 +1,98 @@
+{
+  "id" : "BOOK-REQUEST-ID-456_-HACK002",
+  "@type" : [ "https://onerecord.iata.org/BookingOption" ],
+  "carrier" : {
+    "@type" : [ "https://onerecord.iata.org/Carrier" ],
+    "airlineCode" : "LX"
+  },
+  "price" : {
+    "@type" : [ "https://onerecord.iata.org/Price" ],
+    "ratings" : [ {
+      "@type" : [ "https://onerecord.iata.org/Ratings" ],
+      "ranges" : [ {
+        "@type" : [ "https://onerecord.iata.org/Ranges" ],
+        "amount" : 3032.0,
+        "unitBasis" : "EUR"
+      } ]
+    } ]
+  },
+  "requestRef" : {
+    "id" : "BOOK-REQUEST-ID-456",
+    "@type" : [ "https://onerecord.iata.org/BookingOptionRequest" ],
+    "bookingSegment" : {
+      "@type" : [ "https://onerecord.iata.org/BookingSegment" ],
+      "arrivalLocation" : {
+        "@type" : [ "https://onerecord.iata.org/Location" ],
+        "code" : "ORD",
+        "locationName" : "Chicago O'Hare International"
+      },
+      "departureLocation" : {
+        "@type" : [ "https://onerecord.iata.org/Location" ],
+        "code" : "MUC",
+        "locationName" : "Munich"
+      }
+    }
+  },
+  "shipmentDetails" : {
+    "@type" : [ "https://onerecord.iata.org/Shipment" ],
+    "containedPieces" : [ {
+      "@type" : [ "https://onerecord.iata.org/Piece" ],
+      "transportMovements" : [ {
+        "@type" : [ "https://onerecord.iata.org/TransportMovement" ],
+        "companyIdentifier" : "LX",
+        "arrivalLocation" : {
+          "@type" : [ "https://onerecord.iata.org/Location" ],
+          "code" : "ZRH"
+        },
+        "departureLocation" : {
+          "@type" : [ "https://onerecord.iata.org/Location" ],
+          "code" : "FRA",
+          "locationName" : "Frankfurt International"
+        },
+        "transportMeans" : {
+          "@type" : [ "https://onerecord.iata.org/TransportMeans" ],
+          "vehicleModel" : "32Q"
+        },
+        "transportedPieces" : [ {
+          "@type" : [ "https://onerecord.iata.org/Piece" ],
+          "grossWeight" : {
+            "@type" : [ "https://onerecord.iata.org/Value" ],
+            "unit" : "KGM",
+            "value" : 800.0
+          }
+        } ],
+        "transportIdentifier" : "LX 7301"
+      }, {
+        "@type" : [ "https://onerecord.iata.org/TransportMovement" ],
+        "companyIdentifier" : "LX",
+        "arrivalLocation" : {
+          "@type" : [ "https://onerecord.iata.org/Location" ],
+          "code" : "JFK"
+        },
+        "departureLocation" : {
+          "@type" : [ "https://onerecord.iata.org/Location" ],
+          "code" : "ZRH"
+        },
+        "transportMeans" : {
+          "@type" : [ "https://onerecord.iata.org/TransportMeans" ],
+          "vehicleModel" : "333"
+        },
+        "transportedPieces" : [ {
+          "@type" : [ "https://onerecord.iata.org/Piece" ],
+          "grossWeight" : {
+            "@type" : [ "https://onerecord.iata.org/Value" ],
+            "unit" : "KGM",
+            "value" : 800.0
+          }
+        } ],
+        "transportIdentifier" : "LX 812"
+      } ]
+    } ],
+    "totalGrossWeight" : {
+      "@type" : [ "https://onerecord.iata.org/Value" ],
+      "unit" : "KGM",
+      "value" : 800.0
+    },
+    "totalPieceCount" : 1
+  }
+}
