@@ -1,112 +1,115 @@
 {
-  "id" : "BOOK-REQUEST-ID-456_-HACK001",
+  "@context": {
+    "cargo": "https://onerecord.iata.org/ns/cargo#"
+  },
+  "cargo:id" : "BOOK-REQUEST-ID-456_-HACK001",
   "@type" : [ "https://onerecord.iata.org/BookingOption" ],
-  "carrier" : {
+  "cargo:carrier" : {
     "@type" : [ "https://onerecord.iata.org/Carrier" ],
-    "airlineCode" : "LH"
+    "cargo:airlineCode" : "LH"
   },
-  "carrierProductInfo" : {
+  "cargo:carrierProductInfo" : {
     "@type" : [ "https://onerecord.iata.org/CarrierProduct" ],
-    "productCode" : "R21",
-    "productDescription" : "GENERAL"
+    "cargo:productCode" : "R21",
+    "cargo:productDescription" : "GENERAL"
   },
-  "price" : {
+  "cargo:price" : {
     "@type" : [ "https://onerecord.iata.org/Price" ],
-    "ratings" : [ {
+    "cargo:ratings" : [ {
       "@type" : [ "https://onerecord.iata.org/Ratings" ],
-      "ranges" : [ {
+      "cargo:ranges" : [ {
         "@type" : [ "https://onerecord.iata.org/Ranges" ],
-        "amount" : 3040.0,
-        "unitBasis" : "EUR"
+        "cargo:amount" : 3040.0,
+        "cargo:unitBasis" : "EUR"
       } ]
     } ]
   },
-  "requestRef" : {
-    "id" : "BOOK-REQUEST-ID-456",
+  "cargo:requestRef" : {
+    "cargo:id" : "BOOK-REQUEST-ID-456",
     "@type" : [ "https://onerecord.iata.org/BookingOptionRequest" ],
-    "bookingSegment" : {
+    "cargo:bookingSegment" : {
       "@type" : [ "https://onerecord.iata.org/BookingSegment" ],
-      "arrivalLocation" : {
+      "cargo:arrivalLocation" : {
         "@type" : [ "https://onerecord.iata.org/Location" ],
-        "code" : "ORD",
-        "locationName" : "Chicago O'Hare International"
+        "cargo:code" : "ORD",
+        "cargo:locationName" : "Chicago O'Hare International"
       },
-      "departureLocation" : {
+      "cargo:departureLocation" : {
         "@type" : [ "https://onerecord.iata.org/Location" ],
-        "code" : "MUC",
-        "locationName" : "Munich"
+        "cargo:code" : "MUC",
+        "cargo:locationName" : "Munich"
       }
     }
   },
-  "shipmentDetails" : {
+  "cargo:shipmentDetails" : {
     "@type" : [ "https://onerecord.iata.org/Shipment" ],
-    "containedPieces" : [ {
+    "cargo:containedPieces" : [ {
       "@type" : [ "https://onerecord.iata.org/Piece" ],
-      "transportMovements" : [ {
+      "cargo:transportMovements" : [ {
         "@type" : [ "https://onerecord.iata.org/TransportMovement" ],
-        "companyIdentifier" : "LH",
-        "arrivalLocation" : {
+        "cargo:companyIdentifier" : "LH",
+        "cargo:arrivalLocation" : {
           "@type" : [ "https://onerecord.iata.org/Location" ],
-          "code" : "JFK"
+          "cargo:code" : "JFK"
         },
-        "co2Emissions" : [ {
+        "cargo:co2Emissions" : [ {
           "@type" : [ "https://onerecord.iata.org/CO2Emissions" ],
-          "calculatedEmissions" : {
+          "cargo:calculatedEmissions" : {
             "@type" : [ "https://onerecord.iata.org/Value" ],
-            "unit" : "KGM",
-            "value" : 3368.78
+            "cargo:unit" : "KGM",
+            "cargo:value" : 3368.78
           },
-          "methodName" : "Co2e, Tank-to-Wheel"
+          "cargo:methodName" : "Co2e, Tank-to-Wheel"
         }, {
           "@type" : [ "https://onerecord.iata.org/CO2Emissions" ],
-          "calculatedEmissions" : {
+          "cargo:calculatedEmissions" : {
             "@type" : [ "https://onerecord.iata.org/Value" ],
-            "unit" : "KGM",
-            "value" : 515.97
+            "cargo:unit" : "KGM",
+            "cargo:value" : 515.97
           },
-          "methodName" : "Co2e, Well-to-Tank"
+          "cargo:methodName" : "Co2e, Well-to-Tank"
         }, {
           "@type" : [ "https://onerecord.iata.org/CO2Emissions" ],
-          "calculatedEmissions" : {
+          "cargo:calculatedEmissions" : {
             "@type" : [ "https://onerecord.iata.org/Value" ],
-            "unit" : "KGM",
-            "value" : 3884.75
+            "cargo:unit" : "KGM",
+            "cargo:value" : 3884.75
           },
-          "methodName" : "Co2e, Well-to-Wheel"
+          "cargo:methodName" : "Co2e, Well-to-Wheel"
         }, {
           "@type" : [ "https://onerecord.iata.org/CO2Emissions" ],
-          "calculatedEmissions" : {
+          "cargo:calculatedEmissions" : {
             "@type" : [ "https://onerecord.iata.org/Value" ],
-            "unit" : "EUR",
-            "value" : 108.77
+            "cargo:unit" : "EUR",
+            "cargo:value" : 108.77
           },
-          "methodName" : "Compensation"
+          "cargo:methodName" : "Compensation"
         } ],
-        "departureLocation" : {
+        "cargo:departureLocation" : {
           "@type" : [ "https://onerecord.iata.org/Location" ],
-          "code" : "FRA",
-          "locationName" : "Frankfurt International"
+          "cargo:code" : "FRA",
+          "cargo:locationName" : "Frankfurt International"
         },
-        "transportMeans" : {
+        "cargo:transportMeans" : {
           "@type" : [ "https://onerecord.iata.org/TransportMeans" ],
-          "vehicleModel" : "332"
+          "cargo:vehicleModel" : "332"
         },
-        "transportedPieces" : [ {
+        "cargo:transportedPieces" : [ {
           "@type" : [ "https://onerecord.iata.org/Piece" ],
-          "grossWeight" : {
+          "cargo:grossWeight" : {
             "@type" : [ "https://onerecord.iata.org/Value" ],
-            "unit" : "KGM",
-            "value" : 800.0
+            "cargo:unit" : "KGM",
+            "cargo:value" : 800.0
           }
         } ],
-        "transportIdentifier" : "LH 045"
+        "cargo:transportIdentifier" : "LH 045"
       } ]
     } ],
-    "totalGrossWeight" : {
+    "cargo:totalGrossWeight" : {
       "@type" : [ "https://onerecord.iata.org/Value" ],
-      "unit" : "KGM",
-      "value" : 800.0
+      "cargo:unit" : "KGM",
+      "cargo:value" : 800.0
     },
-    "totalPieceCount" : 1
+    "cargo:totalPieceCount" : 1
   }
 }
